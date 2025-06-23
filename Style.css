@@ -1,0 +1,156 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+header {
+    background-image: url('Cartethyia.jpg'); /* atau 'images/header-bg.jpg' */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer {
+    background-image: url('Cartethyia.jpg'); /* atau 'images/footer-bg.jpg' */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5a5aff;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.work-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.work-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #5a5aff;
+    background-color: #f4f4f8;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .work-list li h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* Skills with Progress Bars */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 16px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress {
+    height: 100%;
+    background-color: #5a5aff;
+    transition: width 0.5s ease-in-out;
+}
